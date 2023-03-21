@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --delay-animation1: 600ms;
+  --delay-animation2: 1200ms;
+  --delay-animation3: 2400ms;
+  --delay-animation4: 3600ms;
+  --delay-animation5: 4800ms;
+  --delay-animation6: 6000ms;
+  --delay-animation7: 7200ms;
+  --delay-animation8: 8400ms;
+  --duracao-animation: 600ms;
+}
+
+body {
+  background: #404040;
+}
+
+.jardim{
+  position: relative;
+  display: flex;
+  background-image: url(fundo.svg);
+  width: 1440px;
+  height: 1020px;
+  margin: 0 auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.coluna{
+  position: relative;
+  z-index: 0;
+
+}
+
+.coluna:nth-child(1) .toca-1{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(1) .toca-2{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.jardim:nth-child(1) .toca-3{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(2) .toca-1{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(2) .toca-2{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation2) forwards;
+}
+.coluna:nth-child(2) .toca-3{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(3) .toca-1{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(3) .toca-2{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(3) .toca-3{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation4) forwards;
+}
+
+.coluna:nth-child(4) .toca-1{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation6) forwards;
+}
+.coluna:nth-child(4) .toca-2{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+.coluna:nth-child(4) .toca-3{
+  width: 222px;
+  height: 172px;
+
+  background-image: url(toupeira6.svg);
+}
+
+
+@keyframes moleAppears {
+  0% {
+    background-image: url(toupeira1.svg);
+    background-repeat: no-repeat;
+  }
+
+  20% {
+    background-image: url(toupeira2.svg);
+    background-repeat: no-repeat;
+  }
+
+  40% {
+    background-image: url(toupeira3.svg);
+    background-repeat: no-repeat;
+  }
+
+  60% {
+    background-image: url(toupeira4.svg);
+    background-repeat: no-repeat;
+  }
+
+  80% {
+    background-image: url(toupeira5.svg);
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(toupeira6.svg);
+    background-repeat: no-repeat;
+  }
+}
